@@ -16,7 +16,7 @@ int main() {
 	cin>> timec; //считываем значения с клавиатуры
 	int distance = speed * timec; //рассчитываем расстояние, которое проехал автомобиль
 	//номер отметки, с учетом направления автомобиля(положительное/отрицательное)
-	int marker = (distance % lenght + lenght) % lenght;
+	int marker =  lenght % lenght;
 	//Выводим результат с указанием направления
 	cout<<" the car will be at the mark" << marker << "km" << endl;
 	return 0;
